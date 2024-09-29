@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+#bg-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    opacity: 0.6; /* Control background video transparency */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 400px; /* Max width of the card */
+    background: rgb(77, 107, 157);
+    color: #fff;
+    border-radius: 25px;
+    padding: 20px; /* Increased padding for spacing */
+    text-align: center;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.date {
+    font-size: 22px; /* Increase font size for date */
+    margin-bottom: 20px; /* Adjust margin for spacing */
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px; /* Increase bottom margin */
+}
+
+.search input {
+    border: none;
+    outline: none;
+    padding: 15px 20px; /* Adjust input padding */
+    font-size: 20px; /* Moderate input text size */
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 10px; /* Reduced margin between input and button */
+    background-color: #ebffff;
+    color: #333;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebffff;
+    border-radius: 50%;
+    padding: 15px; /* Adjusted button padding */
+    cursor: pointer;
+}
+
+.weather-icon {
+    margin: 20px auto; /* Center the icon horizontally */
+    width: 120px; /* Increased icon width */
+}
+
+.temp {
+    font-size: 50px; /* Moderate temperature font size */
+}
+
+.weather-info {
+    margin: 10px 0; /* Adjust margin */
+    font-size: 24px; /* Slightly larger font for weather info */
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0; /* More spacing */
+    align-items: center; /* Center align items vertically */
+}
+
+.details img {
+    width: 30px; /* Reduced the width for better alignment */
+    height: 30px; /* Reduced the height for better alignment */
+}
+
+.col {
+    text-align: center;
+}
+
+.col p {
+    font-size: 20px; /* Adjust font size for details */
+    margin: 5px 0; /* Add margin for spacing */
+}
+
+#hourly-forecast {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Adjust margin */
+}
+
+.hourly {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 10px; /* Adjusted padding for hourly forecast */
+    margin: 0 5px; /* Reduced margin for hourly forecast */
+    flex: 1;
+    text-align: center;
+    font-size: 16px; /* Moderate font size */
+}
+
+.hourly img {
+    width: 30px; /* Set width for hourly weather icon */
+    height: 30px; /* Set height for hourly weather icon */
+}
